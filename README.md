@@ -2,12 +2,14 @@
 
 Crypto Fear & Greed Index MCP.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 867+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `current_index` | Get today's Crypto Fear & Greed Index — a 0–100 market-sentiment gauge for crypto (0 = Extreme Fear, 100 = Extreme Greed). Returns the current value, its classification, the date, and seconds until the next daily update. Keyless. |
+| `index_history` | Get historical Crypto Fear & Greed Index values (most recent first), plus a summary (latest, average, min, max). Each entry has a date, the 0–100 value, and its classification. Keyless. |
 
 ## Quick Start
 
@@ -23,7 +25,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 867+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +49,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
