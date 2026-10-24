@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-crypto-fng",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Crypto Fear & Greed Index MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2957fc565f83db9e398ebea34fc5ca0ac37a334b4d536cb478b6c5f78114576a",
-    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
+    "sourceHash": "v1-bd24d715bd48e2301f4fc5f7c29a74482f6a7a0b05ec24374548464b99f91710",
+    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
   }
 }
