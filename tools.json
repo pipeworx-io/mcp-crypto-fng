@@ -1,0 +1,23 @@
+[
+  {
+    "name": "current_index",
+    "description": "Get today's Crypto Fear & Greed Index — a 0–100 market-sentiment gauge for crypto (0 = Extreme Fear, 100 = Extreme Greed). Returns the current value, its classification, the date, and seconds until the next daily update. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "index_history",
+    "description": "Get historical Crypto Fear & Greed Index values (most recent first), plus a summary (latest, average, min, max). Each entry has a date, the 0–100 value, and its classification. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Number of days of history to return (default 30, max 365)."
+        }
+      }
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-crypto-fng",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Crypto Fear & Greed Index MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-crypto-fng": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "crypto-fng"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-crypto-fng.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/crypto-fng",
   "pipeworx": {
-    "sourceHash": "v1-bd24d715bd48e2301f4fc5f7c29a74482f6a7a0b05ec24374548464b99f91710",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "crypto-fng",
+    "gatewaySlug": "crypto-fng",
+    "sourceHash": "v1-62e815614ef7054451242214a0bdf8648f45790c49df43cf385160d3adbdb400",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
